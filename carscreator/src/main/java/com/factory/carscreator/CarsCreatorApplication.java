@@ -1,6 +1,6 @@
 package com.factory.carscreator;
 
-import com.factory.carscreator.data.Car;
+import com.factory.carscreator.domain.Car;
 import com.factory.carscreator.room.CarBuildRoom;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

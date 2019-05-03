@@ -1,6 +1,6 @@
 package com.factory.carscreator.room;
 
-import com.factory.carscreator.data.Car;
+import com.factory.carscreator.domain.Car;
 import com.factory.carscreator.modelcar.CarType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
