@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}" />
+
+    <script th:src="@{/webjars/jquery/3.4.0/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/4.3.1/js/bootstrap.min.js}"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div th:each="car1: ${listcars} " >
+            <p th:text="${car1}" />
+        </div>
+
+
+        <table class="table">
+            <thead>
+            <tr>
+                <td>Cars Name</td>
+                <td>Cars Color</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each=" car1 : ${listcars}">
+                <td th:text="${car1.name}"></td>
+                <td th:text="${car1.color}"></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>
